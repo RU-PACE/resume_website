@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupesh Kumar Thakur - Resume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #87CEEB, #FFD700);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      padding: 2em 0;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+      background: white;
+      margin: 2em;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      width: 100%;
+      margin-bottom: 1em;
+      cursor: pointer;
+      transition: opacity 0.3s; /* Added transition for smooth opacity change */
+    }
+
+    section:hover h2 {
+      color: #2ecc71; /* Green color on hover */
+    }
+
+    section.expanded {
+      opacity: 0.7;
+    }
+
+    section.expanded h2 {
+      color: #2ecc71; /* Keep text green when expanded */
+    }
+
+    h2 {
+      color: #3498db;
+      transition: color 0.3s; /* Added transition for smooth color change */
+    }
+
+    section h2 {
+      transition: opacity 0.3s ease-in-out; /* Added transition for smooth opacity change */
+    }
+
+    .content {
+      display: none;
+      padding: 1em;
+      background-color: #ecf0f1;
+      border-radius: 5px;
+    }
+
+    .content p {
+      margin: 0;
+    }
+
+    .content a {
+      color: #3498db;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .skills li {
+      background-color: #3498db;
+      color: white;
+      padding: 0.5em;
+      margin: 0.5em;
+      border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      main {
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .content {
+        padding: 0.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Inside the <header> section -->
+  <header>
+    <img src="your_photo.jpg" alt="Your Photo" style="border-radius: 50%;" height="100" width="100">
+    <h1>Rupesh Kumar Thakur</h1>
+    <p>
+      <img src="phone_icon.png" alt="Phone Icon" height="16" width="16"> +91 9835271246
+      <img src="email_icon.png" alt="Email Icon" height="16" width="16"> rupeshkumarthakur135@gmail.com
+      <img src="linkedin_icon.png" alt="LinkedIn Icon" height="16" width="16"> <a
+        href="https://www.linkedin.com/in/rupesh-kumar-thakur-12a469212/" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <main>
+    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('experience')">
+      <h2>EXPERIENCE</h2>
+      <div class="content experience">
+        <p><strong>Fidelity International</strong><br>
+            Programmer<br>
+            • Contributed in a test-bed framework project, responsible for automated integration testing of data
+            ingestion to LUSID application. This whole framework was built using AWS services like AWS Lambda, DynamoDB, S3,
+            SQS, and SNS. For continuous delivery, we have used AWS CodePipeline.<br>
+            • Currently, working on AWS services, Terraform, and Python programming to build, deploy, and manage
+            infrastructure as code<br>
+            August 2022 – Present</p>
+          <p><strong>IIT Indore</strong><br>
+            Research Intern<br>
+            • Worked on SILVACO software to design hardware modelling of solar cell by introducing various materials and
+            changing parameters.<br>
+            • Used SCAPS software to analyse the best efficiency for solar cell by going through several research
+            papers.<br>
+            June 2021 – July 2021</p>
+          <p><strong>BSNL</strong><br>
+            Trainee<br>
+            • Gained a practical understanding of GSM architecture and its working.<br>
+            • Acquired an understanding of TELECOM SETUP which involves multiplexing , optical fiber, server room.<br>
+            June 2018 – July 2018</p>
+      </div>
+    </section>
+
+    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('education')">
+      <h2>EDUCATION</h2>
+      <div class="content education">
+        <p>
+            <strong>Sant Longowal Institute of Engineering and Technology</strong><br>
+            B.E in Electronics and Communication Engineering (CGPA: 9.06)<br>
+            Punjab, India<br>
+            July 2019 – July 2022
+          </p>
+          <p>
+            <strong>Sant Longowal Institute of Engineering and Technology</strong><br>
+            Diploma in Electronics and Communication Engineering (CGPA: 9.4)<br>
+            Punjab, India<br>
+            July 2016 – June 2019
+          </p>
+          <p>
+            <strong>Rose Public School</strong><br>
+            Xth (CGPA: 9.4)<br>
+            Bihar, India<br>
+            April 2016
+          </p>
+      </div>
+    </section>
+
+    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('projects')">
+      <h2>COLLEGE PROJECTS</h2>
+      <div class="content projects">
+        <p><strong>Smart Irrigation System</strong><br>
+            C programming, Arduino, Sensors, Display, Water level controller<br>
+            Demo Link | January 2022<br>
+            • Developed an ideal flow chart by combining sensors like moisture sensor , rain sensor , night sensor and
+            temperature sensor for a perfect condition to supply water in field which is indicated on display.<br>
+            • Implemented above flow chart using C programing and arduino into a smart irrigation system.<br>
+            • Built an automatic water level controller using water level sensor and a motor which can provide the
+            water whenever it is required.</p>
+          <p><strong>Scrolling LED Display</strong><br>
+            Arduino, Shift Register IC, LED matrix , C programming February 2019<br>
+            • Built a display using LED which can show special events or can be utlised to display the names of labs or
+            classrooms.<br>
+            • Displaying names can be further modified or changed and this whole project can further be modified
+            using a GSM or Blutooth module.</p>
+      </div>
+    </section>
+
+    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('skills')">
+      <h2>SKILLS</h2>
+      <div class="content skills">
+        <ul>
+            <li>Languages: Python,C</li>
+            <li>Services: AWS,Git</li>
+            <li>Software Tools: VS Code,PyCharm</li>
+            <li>Simulation Tools: Multisim,Proteus,Silvaco</li>
+            <li>Other software Tools: Ms (Word, Excel, PowerPoint),GIMP,DaVinci Resolve</li>
+          </ul>
+      </div>
+    </section>
+
+    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('interests')">
+      <h2>INTERESTS</h2>
+      <div class="content interests">
+        <p>• Semiconductors</p>
+        <p>• LI-FI</p>
+        <p>• Circuit Simulation</p>
+        <p>• Football , Cricket</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleContent(section) {
+      const content = document.querySelector(`.${section}`);
+      const h2 = content.previousElementSibling;
+      const sectionElement = content.parentElement;
+
+      if (sectionElement.classList.contains('expanded')) {
+        content.style.display = 'none';
+        h2.style.color = '#3498db';
+        sectionElement.classList.remove('expanded');
+      } else {
+        content.style.display = 'block';
+        h2.style.color = '#2ecc71';
+        sectionElement.classList.add('expanded');
+      }
+    }
+
+    function expandSection(section) {
+      const h2 = section.querySelector('h2');
+      h2.style.opacity = '0.7';
+    }
+
+    function collapseSection(section) {
+      const h2 = section.querySelector('h2');
+      h2.style.opacity = '1';
+    }
+  </script>
+</body>
+
+</html>
