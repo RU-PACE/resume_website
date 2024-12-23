@@ -35,28 +35,20 @@
       width: 100%;
       margin-bottom: 1em;
       cursor: pointer;
-      transition: opacity 0.3s; /* Added transition for smooth opacity change */
+      transition: opacity 0.3s;
     }
 
     section:hover h2 {
-      color: #2ecc71; /* Green color on hover */
+      color: #2ecc71;
     }
 
     section.expanded {
-      opacity: 0.7;
-    }
-
-    section.expanded h2 {
-      color: #2ecc71; /* Keep text green when expanded */
+      opacity: 0.9;
     }
 
     h2 {
       color: #3498db;
-      transition: color 0.3s; /* Added transition for smooth color change */
-    }
-
-    section h2 {
-      transition: opacity 0.3s ease-in-out; /* Added transition for smooth opacity change */
+      transition: color 0.3s;
     }
 
     .content {
@@ -66,29 +58,25 @@
       border-radius: 5px;
     }
 
-    .content p {
-      margin: 0;
+    .content ul {
+      padding-left: 1.5em;
     }
 
-    .content a {
-      color: #3498db;
+    .content li {
+      margin: 0.5em 0;
     }
 
-    .content a:hover {
-      text-decoration: underline;
-    }
-
-    .skills ul {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+    /*.skills ul {*/
+    /*  list-style-type: none;*/
+    /*  padding: 0;*/
+    /*  display: flex;*/
+    /*  flex-wrap: wrap;*/
+    /*  justify-content: space-around;*/
+    /*}*/
 
     .skills li {
-      background-color: #3498db;
-      color: white;
+      /*background-color: #3998db;*/
+      color: black;
       padding: 0.5em;
       margin: 0.5em;
       border-radius: 5px;
@@ -108,109 +96,114 @@
 </head>
 
 <body>
-  <!-- Inside the <header> section -->
   <header>
     <img src="your_photo.jpg" alt="Your Photo" style="border-radius: 50%;" height="100" width="100">
     <h1>Rupesh Kumar Thakur</h1>
     <p>
-      <img src="phone_icon.png" alt="Phone Icon" height="16" width="16"> +91 9835271246
-      <img src="email_icon.png" alt="Email Icon" height="16" width="16"> rupeshkumarthakur135@gmail.com
+      <img src="phone_icon.png" alt="Phone Icon" height="16" width="16"> +91 9835271246<br>
+      <img src="email_icon.png" alt="Email Icon" height="16" width="16"> rupeshkumarthakur135@gmail.com<br>
       <img src="linkedin_icon.png" alt="LinkedIn Icon" height="16" width="16"> <a
         href="https://www.linkedin.com/in/rupesh-kumar-thakur-12a469212/" target="_blank">LinkedIn</a>
     </p>
   </header>
 
   <main>
-    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('experience')">
+    <section onclick="toggleContent('experience')">
       <h2>EXPERIENCE</h2>
       <div class="content experience">
-        <p><strong>Fidelity International</strong><br>
-            Programmer<br>
-            • Contributed in a test-bed framework project, responsible for automated integration testing of data
-            ingestion to LUSID application. This whole framework was built using AWS services like AWS Lambda, DynamoDB, S3,
-            SQS, and SNS. For continuous delivery, we have used AWS CodePipeline.<br>
-            • Currently, working on AWS services, Terraform, and Python programming to build, deploy, and manage
-            infrastructure as code<br>
-            August 2022 – Present</p>
-          <p><strong>IIT Indore</strong><br>
-            Research Intern<br>
-            • Worked on SILVACO software to design hardware modelling of solar cell by introducing various materials and
-            changing parameters.<br>
-            • Used SCAPS software to analyse the best efficiency for solar cell by going through several research
-            papers.<br>
-            June 2021 – July 2021</p>
-          <p><strong>BSNL</strong><br>
-            Trainee<br>
-            • Gained a practical understanding of GSM architecture and its working.<br>
-            • Acquired an understanding of TELECOM SETUP which involves multiplexing , optical fiber, server room.<br>
-            June 2018 – July 2018</p>
+        <ul>
+          <li><strong>Fidelity International</strong> (August 2022 – Present)
+            <ul>
+              <li>Contributed to a test-bed framework project for automated integration testing of data ingestion to the LUSID application, using AWS services like Lambda, DynamoDB, S3, SQS, and SNS.</li>
+              <li>Worked on building, deploying, and managing infrastructure as code with AWS services, Terraform, and Python programming.</li>
+            </ul>
+          </li>
+          <li><strong>IIT Indore</strong> (June 2021 – July 2021)
+            <ul>
+              <li>Designed hardware models of solar cells using SILVACO software with various materials and parameters.</li>
+              <li>Analyzed solar cell efficiency using SCAPS software and research papers.</li>
+            </ul>
+          </li>
+          <li><strong>BSNL</strong> (June 2018 – July 2018)
+            <ul>
+              <li>Acquired practical knowledge of GSM architecture and telecom setups, including multiplexing and optical fiber systems.</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('education')">
+    <section onclick="toggleContent('education')">
       <h2>EDUCATION</h2>
       <div class="content education">
-        <p>
-            <strong>Sant Longowal Institute of Engineering and Technology</strong><br>
-            B.E in Electronics and Communication Engineering (CGPA: 9.06)<br>
-            Punjab, India<br>
-            July 2019 – July 2022
-          </p>
-          <p>
-            <strong>Sant Longowal Institute of Engineering and Technology</strong><br>
-            Diploma in Electronics and Communication Engineering (CGPA: 9.4)<br>
-            Punjab, India<br>
-            July 2016 – June 2019
-          </p>
-          <p>
-            <strong>Rose Public School</strong><br>
-            Xth (CGPA: 9.4)<br>
-            Bihar, India<br>
-            April 2016
-          </p>
+        <ul>
+          <li><strong>Sant Longowal Institute of Engineering and Technology</strong>
+            <ul>
+              <li>B.E in Electronics and Communication Engineering (CGPA: 9.06)</li>
+              <li>Diploma in Electronics and Communication Engineering (CGPA: 9.4)</li>
+            </ul>
+          </li>
+          <li><strong>Rose Public School</strong>
+            <ul>
+              <li>Xth (CGPA: 9.4)</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('projects')">
+    <section onclick="toggleContent('projects')">
       <h2>COLLEGE PROJECTS</h2>
       <div class="content projects">
-        <p><strong>Smart Irrigation System</strong><br>
-            C programming, Arduino, Sensors, Display, Water level controller<br>
-            Demo Link | January 2022<br>
-            • Developed an ideal flow chart by combining sensors like moisture sensor , rain sensor , night sensor and
-            temperature sensor for a perfect condition to supply water in field which is indicated on display.<br>
-            • Implemented above flow chart using C programing and arduino into a smart irrigation system.<br>
-            • Built an automatic water level controller using water level sensor and a motor which can provide the
-            water whenever it is required.</p>
-          <p><strong>Scrolling LED Display</strong><br>
-            Arduino, Shift Register IC, LED matrix , C programming February 2019<br>
-            • Built a display using LED which can show special events or can be utlised to display the names of labs or
-            classrooms.<br>
-            • Displaying names can be further modified or changed and this whole project can further be modified
-            using a GSM or Blutooth module.</p>
+        <ul>
+          <li><strong>Smart Irrigation System</strong>
+            <ul>
+              <li>Designed a flow chart combining sensors for automated water supply to fields.</li>
+              <li>Implemented the system using Arduino and C programming.</li>
+              <li>Built an automatic water level controller for efficient water management.</li>
+            </ul>
+          </li>
+          <li><strong>Scrolling LED Display</strong>
+            <ul>
+              <li>Created an LED display for showcasing names and events.</li>
+              <li>Enhanced with potential for GSM or Bluetooth module integration.</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('skills')">
+    <!--<section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('skills')">-->
+    <!--  <h2>SKILLS</h2>-->
+    <!--  <div class="content skills">-->
+    <!--    <p><strong>Languages:</strong> Python, SQL</p>-->
+    <!--    <p><strong>Technologies:</strong> AWS, Neo4j graph database</p>-->
+    <!--    <p><strong>Tools & Frameworks:</strong> VS Code, PyCharm, Git, Pandas, FastAPI</p>-->
+    <!--  </div>-->
+    <!--</section>-->
+
+
+    <section onclick="toggleContent('skills')">
       <h2>SKILLS</h2>
       <div class="content skills">
         <ul>
-            <li>Languages: Python,C</li>
-            <li>Services: AWS,Git</li>
-            <li>Software Tools: VS Code,PyCharm</li>
-            <li>Simulation Tools: Multisim,Proteus,Silvaco</li>
-            <li>Other software Tools: Ms (Word, Excel, PowerPoint),GIMP,DaVinci Resolve</li>
-          </ul>
+
+          <li><strong>Languages:</strong> Python, SQL</li>
+          <li><strong>Technologies:</strong> AWS, Neo4j graph database</li>
+          <li><strong>Tools & Frameworks:</strong> VS Code, PyCharm, Git, Pandas, FastAPI</li>
+        </ul>
       </div>
     </section>
 
-    <section onmouseenter="expandSection(this)" onmouseleave="collapseSection(this)" onclick="toggleContent('interests')">
+    <section onclick="toggleContent('interests')">
       <h2>INTERESTS</h2>
       <div class="content interests">
-        <p>• Semiconductors</p>
-        <p>• LI-FI</p>
-        <p>• Circuit Simulation</p>
-        <p>• Football , Cricket</p>
+        <ul>
+          <li>Semiconductors</li>
+          <li>LI-FI</li>
+          <li>Circuit Simulation</li>
+          <li>Football, Cricket</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -218,28 +211,15 @@
   <script>
     function toggleContent(section) {
       const content = document.querySelector(`.${section}`);
-      const h2 = content.previousElementSibling;
       const sectionElement = content.parentElement;
 
       if (sectionElement.classList.contains('expanded')) {
         content.style.display = 'none';
-        h2.style.color = '#3498db';
         sectionElement.classList.remove('expanded');
       } else {
         content.style.display = 'block';
-        h2.style.color = '#2ecc71';
         sectionElement.classList.add('expanded');
       }
-    }
-
-    function expandSection(section) {
-      const h2 = section.querySelector('h2');
-      h2.style.opacity = '0.7';
-    }
-
-    function collapseSection(section) {
-      const h2 = section.querySelector('h2');
-      h2.style.opacity = '1';
     }
   </script>
 </body>
