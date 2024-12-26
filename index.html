@@ -97,76 +97,123 @@
 
 <body>
   <header>
-    <img src="your_photo.jpg" alt="Your Photo" style="border-radius: 50%;" height="100" width="100">
+    <img src="utils/profile_photo.png" alt="Your Photo" style="border-radius: 50%;" height="115" width="110">
     <h1>Rupesh Kumar Thakur</h1>
     <p>
-      <img src="phone_icon.png" alt="Phone Icon" height="16" width="16"> +91 9835271246
-      <img src="email_icon.png" alt="Email Icon" height="16" width="16"> rupeshkumarthakur135@gmail.com
-      <img src="linkedin_icon.png" alt="LinkedIn Icon" height="16" width="16"> <a
+      <img src="utils/phone.png" alt="Phone Icon" height="16" width="20"> +91 9835271246
+      <img src="utils/email.png" alt="Email Icon" height="15" width="16"> rupeshkumarthakur135@gmail.com
+      <img src="utils/linkedin_icon.png" alt="LinkedIn Icon" height="16" width="17"> <a
         href="https://www.linkedin.com/in/rupesh-kumar-thakur-12a469212/" target="_blank">LinkedIn</a>
     </p>
   </header>
 
   <main>
     <section onclick="toggleContent('experience')">
-      <h2>EXPERIENCE</h2>
+      <h2><img src="utils/experience.png" alt="Phone Icon" height="30" width="35"> EXPERIENCE</h2>
       <div class="content experience">
         <ul>
-          <li><strong>Fidelity International</strong> (August 2022 – Present)
-            <ul>
-              <li>Contributed to a test-bed framework project for automated integration testing of data ingestion to the LUSID application, using AWS services like Lambda, DynamoDB, S3, SQS, and SNS.</li>
-              <li>Worked on building, deploying, and managing infrastructure as code with AWS services, Terraform, and Python programming.</li>
-            </ul>
+          <li><strong>Fidelity International</strong>
+                    <div class="job-title">
+                      <ul>
+                        <li><i>Programmer (September 2023 – Present)</i>
+                      <ul>
+                        <li>Developed a comprehensive integration test suite framework leveraging <b><i>AWS Services including (Lambda, DynamoDB, S3), Python and Terraform</i></b> to automate the integration tests , deployed across <b><i>30+ repositories</i></b>.The deployment process was streamlined using <b><i>AWS CodePipeline</i></b> for continuous delivery.This improved our testing efficiency by <b><i>40%</i></b> and reduced integration issues in production environments by <b><i>30%</i></b>.</li>
+
+                        <li>Upgraded Terraform modules for AWS services across <b><i>70+ repositories</i></b>, that enhanced infrastructure management and performance by <b><i>25%</i></b> through faster deployment times and improved resource utilization.</li>
+
+                        <li>Led <b><i>LUSID-SDK and Python version upgrades</i></b>, addressing breaking changes in <b><i>50+ repositories</i></b> to ensure stability and library compatibility. This effort resulted in improved application performance by <b><i>20%</i></b>, facilitating smoother development workflows.</li>
+                      </ul></li></ul></div>
+
+                    <div class="job-title">
+                      <ul>
+                        <li><i>Graduate Programmer (August 2022 – August 2023)</i>
+                      <ul>
+                        <li>Contributed to the ‘Organization Mapping’ project by utilizing <b><i>FastAPI</i></b> and the <b><i>Neo4j</i></b> graph database to develop a system for managing and visualizing complex organizational relationships, resulting in a <b><i>40%</i></b> increase in efficiency for Business Analysts and other stakeholders in accessing critical insights.</li>
+                      </ul></li></ul></div>
           </li>
-          <li><strong>IIT Indore</strong> (June 2021 – July 2021)
-            <ul>
-              <li>Designed hardware models of solar cells using SILVACO software with various materials and parameters.</li>
-              <li>Analyzed solar cell efficiency using SCAPS software and research papers.</li>
-            </ul>
-          </li>
-          <li><strong>BSNL</strong> (June 2018 – July 2018)
-            <ul>
-              <li>Acquired practical knowledge of GSM architecture and telecom setups, including multiplexing and optical fiber systems.</li>
-            </ul>
+          <li><strong>IIT Indore</strong>
+
+                    <div class="job-title">
+                      <ul>
+                        <li><i>Research Intern (June 2021 – July 2021)</i>
+                      <ul>
+                        <li>Utilized <b><i>SILVACO</i></b> software to design <b><i>hardware models</i></b> for solar cells,incorporating various materials and adjusting parameters to optimize performance. Analyzed solar cell efficiency using <b><i>SCAPS</i></b> software by studying multiple research papers and conducting simulations to determine the most efficient configurations and able to achieve <b><i>20%</i></b> efficiency.</li>
+                      </ul></li></ul></div>
+<!--            <ul>-->
+<!--              <li>Designed hardware models of solar cells using SILVACO software with various materials and parameters.</li>-->
+<!--              <li>Analyzed solar cell efficiency using SCAPS software and research papers.</li>-->
+<!--            </ul>-->
           </li>
         </ul>
       </div>
+    </section>
+
+
+    <section onclick="toggleContent('skills')">
+      <h2><img src="utils/skills.png" alt="Phone Icon" height="30" width="30"> SKILLS</h2>
+      <div class="content skills">
+        <ul>
+
+          <li><strong>Languages:</strong> Python, SQL</li>
+          <li><strong>Technologies:</strong> AWS (EC2, Lambdas, SQS, SNS, DynamoDB, AWS CodePipeline), Neo4j graph database, Docker</li>
+          <li><strong>Tools & Frameworks:</strong> Git, GitHub, Pandas, FastAPI, Jenkins, VS Code, PyCharm</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section onclick="toggleContent('projects')">
+      <h2><img src="utils/project.png" alt="Phone Icon" height="30" width="25"> PROJECTS</h2>
+      <div class="content projects">
+
+        <ul>
+
+          <li><strong>Sports-Data-Platform <a href="https://github.com/RU-PACE/sports-data-platform"> GitHub</a></strong>
+
+            <div class="job-title">
+                      <ul>
+                        <li><i>CICD Project (December 2023) || Python, MySql, Docker, Jenkins</i>
+                      <ul>
+                        <li>Developed a comprehensive sports data platform using FastAPI and MySQL, enabling seamless CRUD operations to manage data in real-time for multiple sports, leagues, tournaments, and historical winners.</li>
+                        <li>Enabled users to upload favorite sports data via a predefined CSV structure, enhancing flexibility and user engagement.</li>
+                        <li>Deployed the application using Jenkins, automated its conversion into Docker images, and published them on Docker Hub for streamlined deployment and scalability.</li>
+                      </ul></li></ul>
+            </div></li></ul>
+
+        <ul>
+
+<!--          <li><strong><a href="https://youtu.be/mlZ5qdnXdDE?si=AixiiVE-X_sD2R73">Smart Irrigation System</a></strong>-->
+            <li><strong>Smart Irrigation System <a href="https://youtu.be/mlZ5qdnXdDE?si=AixiiVE-X_sD2R73"> Link</a></strong>
+            <div class="job-title">
+                      <ul>
+                        <li><i>Final Year Project (January 2022) ||  C programming, Arduino, Sensors, Proteus simulation software</i>
+                      <ul>
+                        <li>Developed a low-cost automated smart irrigation system using C programming on an Arduino microcontroller, integrating real-time data from soil moisture and optional environmental sensors (temperature, humidity, light). The system automated irrigation based on predefined thresholds, optimizing water usage and promoting plant health.</li>
+                      </ul></li></ul>
+            </div></li></ul>
+
+          </div>
     </section>
 
     <section onclick="toggleContent('education')">
-      <h2>EDUCATION</h2>
+      <h2><img src="utils/education.jpeg" alt="Phone Icon" height="30" width="30"> EDUCATION</h2>
       <div class="content education">
         <ul>
-          <li><strong>Sant Longowal Institute of Engineering and Technology</strong>
+          <li><strong>Sant Longowal Institute of Engineering and Technology (2019 – 2022)</strong>
             <ul>
-              <li>B.E in Electronics and Communication Engineering (CGPA: 9.06)</li>
-              <li>Diploma in Electronics and Communication Engineering (CGPA: 9.4)</li>
+              <li><i>B.E in Electronics and Communication Engineering (CGPA: 9.06)</i></li>
             </ul>
           </li>
+
+          <li><strong>Sant Longowal Institute of Engineering and Technology (2016 – 2019)</strong>
+            <ul>
+              <li><i>Diploma in Electronics and Communication Engineering (CGPA: 9.4)</i></li>
+            </ul>
+          </li>
+
           <li><strong>Rose Public School</strong>
             <ul>
-              <li>Xth (CGPA: 9.4)</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section onclick="toggleContent('projects')">
-      <h2>COLLEGE PROJECTS</h2>
-      <div class="content projects">
-        <ul>
-          <li><strong>Smart Irrigation System</strong>
-            <ul>
-              <li>Designed a flow chart combining sensors for automated water supply to fields.</li>
-              <li>Implemented the system using Arduino and C programming.</li>
-              <li>Built an automatic water level controller for efficient water management.</li>
-            </ul>
-          </li>
-          <li><strong>Scrolling LED Display</strong>
-            <ul>
-              <li>Created an LED display for showcasing names and events.</li>
-              <li>Enhanced with potential for GSM or Bluetooth module integration.</li>
+              <li><i>Xth (CGPA: 9.4)</i></li>
             </ul>
           </li>
         </ul>
@@ -182,27 +229,12 @@
     <!--  </div>-->
     <!--</section>-->
 
-
-    <section onclick="toggleContent('skills')">
-      <h2>SKILLS</h2>
-      <div class="content skills">
-        <ul>
-
-          <li><strong>Languages:</strong> Python, SQL</li>
-          <li><strong>Technologies:</strong> AWS, Neo4j graph database</li>
-          <li><strong>Tools & Frameworks:</strong> VS Code, PyCharm, Git, Pandas, FastAPI</li>
-        </ul>
-      </div>
-    </section>
-
     <section onclick="toggleContent('interests')">
-      <h2>INTERESTS</h2>
+      <h2><img src="utils/cerification.png" alt="Phone Icon" height="25" width="30"> Certifications</h2>
       <div class="content interests">
         <ul>
-          <li>Semiconductors</li>
-          <li>LI-FI</li>
-          <li>Circuit Simulation</li>
-          <li>Football, Cricket</li>
+          <li>IIT Indore Internship (July 2021)</li>
+          <li>BSNL IN-Plant Training, Four Weeks (June 2018)</li>
         </ul>
       </div>
     </section>
